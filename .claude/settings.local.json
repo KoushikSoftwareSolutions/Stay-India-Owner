@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:192.168.0.103)",
+      "Bash(curl -s http://localhost:5050/api-docs/swagger-ui-init.js)",
+      "Bash(cd /Users/krsh/Downloads/\"Stay India Owner\")",
+      "Bash(curl -sv -X POST http://localhost:5000/api/auth/request-otp -H \"Content-Type: application/json\" -d '{\"\"phone\"\": \"\"9999999999\"\", \"\"role\"\": \"\"OWNER\"\"}')",
+      "Bash(curl -s -X POST http://localhost:5050/api/auth/request-otp -H \"Content-Type: application/json\" -d '{\"\"phone\"\": \"\"9999999999\"\", \"\"role\"\": \"\"OWNER\"\"}')",
+      "Bash(dart analyze:*)",
+      "Bash(grep -v \"^$\")"
+    ]
+  }
+}
